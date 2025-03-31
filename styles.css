@@ -1,7 +1,42 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+header, footer {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+}
+nav ul {
+    list-style: none;
     padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.skill {
+    margin: 10px;
+    padding: 15px;
+    background: #ff6347;
+    color: white;
+    border-radius: 5px;
+    animation: moveSkill 2s infinite alternate ease-in-out;
+}
+@keyframes moveSkill {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 header {
     display: flex;
