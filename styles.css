@@ -1,88 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+/* Styles personnalisés complémentaires à Bootstrap */
+.hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
-header, footer {
-    background: #333;
-    color: white;
-    padding: 15px 0;
+
+.profile-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 5px solid white;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
+
+.skill-card {
+    transition: transform 0.3s;
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+
+.skill-card:hover {
+    transform: translateY(-10px);
 }
-nav ul li a {
-    color: white;
-    text-decoration: none;
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-.skills {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+
+section {
+    padding: 100px 0;
 }
-.skill {
-    margin: 10px;
-    padding: 15px;
-    background: #ff6347;
-    color: white;
-    border-radius: 5px;
-    animation: moveSkill 2s infinite alternate ease-in-out;
+
+/* Animation pour le texte */
+#animated-text {
+    min-height: 60px;
 }
-@keyframes moveSkill {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333;
-    color: white;
-    padding: 15px;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-nav ul li {
-    margin: 0 10px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-.menu-icon {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .menu-icon {
-        display: block;
+    .profile-img {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
     }
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #333;
-        padding: 0;
-    }
-    nav ul.active {
-        display: flex;
-    }
-    nav ul li {
-        text-align: center;
-        padding: 15px;
+    
+    section {
+        padding: 60px 0;
     }
 }
