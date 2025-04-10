@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         .contact-form-container {
             max-width: 600px;
@@ -20,6 +22,29 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
+        .social-links {
+            margin-top: 2rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f8f9fa;
+            color: #0d6efd;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #0d6efd;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
         @media (max-width: 768px) {
             .contact-form-container {
                 padding: 0 15px;
@@ -28,32 +53,52 @@
             .contact-info-card {
                 margin-bottom: 30px;
             }
+            
+            .social-links {
+                text-align: center;
+                margin-top: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">MAHAMAT ALI MOUSSA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-code me-2"></i>MAHAMAT ALI MOUSSA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse nav-underline" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="../index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="realisation.html">Realisation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="realisation.html">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"> Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
     <section class="py-5 mt-5">
         <div class="container">
-            <h1 class="text-center display-4 fw-bold mb-5">Contactez-moi</h1>
+            <h1 class="text-center text-primary display-4 fw-bold mb-5">Contactez-moi</h1>
             
             <div class="row justify-content-center">
                 <!-- Colonne d'informations de contact -->
@@ -77,12 +122,31 @@
                             </div>
                         </div>
                         
-                        <div class="d-flex align-items-start">
+                        <div class="d-flex align-items-start mb-4">
                             <i class="bi bi-geo-alt-fill text-primary mt-1 me-3"></i>
                             <div>
                                 <h5 class="mb-1">Adresse</h5>
-                                <p class="mb-0">Fass Dakar ,Senegal</p>
+                                <p class="mb-0">Fass Dakar, Sénégal</p>
                             </div>
+                        </div>
+                        
+                        <!-- Réseaux sociaux ajoutés ici -->
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/public-profile/settings" target="_blank" title="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/al-king-github" target="_blank" title="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://x.com/MAHAMAT89800679?t=X2egePukLqvNe5HRSg1vFA&s=09" target="_blank" title="Twitter">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="https://www.facebook.com/mahamatalimoussa0235" target="_blank" title="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/mahamatalimoussa0235/" target="_blank" title="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -112,7 +176,7 @@
                             </div>
                             
                             <button type="submit" class="btn btn-primary btn-lg w-100">
-                                <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                                <i class="bi bi-send-fill me-2"></i>Envoyer le message
                             </button>
                         </form>
                     </div>
@@ -120,15 +184,79 @@
             </div>
         </div>
     </section>
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-        <p class="mb-0">© 2024 MAHAMAT ALI MOUSSA - Tous droits réservés</p>
-    </div>
-</footer>
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>
+                        <a class="navbar-brand fw-bold" href="#">
+                        <i class="fas fa-code me-2"></i>MAHAMAT ALI MOUSSA
+                        </a>
+                    </h5>
+                    <p>Développeur Full-Stack</p>
+                    <p>DevOps</p>
+                    <span>conception de solutions web performantes</span>
+                    <span>spécialisé en sécurité informatique</span>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <h5>Navigation</h5>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="realisation.html">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"> Contact</a>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-envelope me-2"></i> mahamatalimoussa49@gmail.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +221 78 290 17 01</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Fass Dakar, Sénégal</p>
+                    <h3 class="h4 mb-3 d-block d-sm-none">Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/public-profile/settings" target="_blank" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/al-king-github" target="_blank" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://x.com/MAHAMAT89800679?t=X2egePukLqvNe5HRSg1vFA&s=09" target="_blank" title="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="https://www.facebook.com/mahamatalimoussa0235" target="_blank" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mahamatalimoussa0235/" target="_blank" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>                
+            </div>     
+            <hr class="my-4 bg-white">
+            <div class="text-center">
+                <p class="mb-0">© 2025 MAHAMAT ALI MOUSSA - Tous droits réservés</p>
+            </div>            
+        </div>
+    </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../javascript.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript.js"></script>
 </body>
 </html>

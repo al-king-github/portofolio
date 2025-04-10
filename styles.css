@@ -6,8 +6,7 @@
 .profile-img {
     width: 350px;
     height: 350px;
-    object-fit: cover;
-    border: 5px solid white;
+    object-fit:contain;
 }
 
 .skill-card {
@@ -41,5 +40,53 @@ section {
     
     section {
         padding: 60px 0;
+    }
+}
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    color: #0d6efd;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #0d6efd;
+    color: white;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 0 15px;
+    }
+    
+    .contact-info-card {
+        margin-bottom: 30px;
+    }
+    
+    .social-links {
+        text-align: center;
+        margin-top: 1.5rem;
     }
 }

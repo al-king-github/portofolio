@@ -8,86 +8,102 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">MAHAMAT ALI MOUSSA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="#">
+                Accueil
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse nav-underline" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./components/about.html">À Propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./components/services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./components/realisation.html">Realisation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./components/portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./components/contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./components/about.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./components/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./components/realisation.html">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./components/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./components/contact.html"> Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <br>
-    <br>
-    <hr>
+    <span class="d-block d-md-none" style="padding-top: 100px;">
+     </span>
+     <br>
+     <br>
     <!-- Hero Section -->
-    <header class="hero-section vh-100 d-flex align-items-center">
+    <header class="hero-section vh-100 d-flex align-items-center pt-md-0">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h1 class="display-4 fw-bold mb-4">Bienvenue sur mon Portfolio</h1>
                     <h2 id="animated-text" class="animated-text text-primary mb-4"></h2>
                     <p class="lead mb-4">Découvrez mon univers et mes compétences en développement et cybersécurité.</p>
-                        <a href="assets/Mon_cv_2025_2.pdf (2).pdf" download="Mon_CV.pdf" class="btn btn-primary btn-lg">
-                            <i class="fas fa-file-pdf"></i> Télécharger mon CV
-                        </a>
+                        <a href="./components/about.html" class="btn btn-primary btn-lg">Consulter Mon Profil</a>
                         <a href="./components/portfolio.html" class="btn btn-outline-primary btn-lg">Voir mon travail</a>
                 </div>
                 <div class="col-lg-6 text-center">
-                    <img src="assets/WhatsApp Image 2025-03-31 à 22.43.35_26ec268f.jpg" alt="Photo de profil" class="img-fluid rounded-circle shadow-lg profile-img">
+                    <img src="assets/indexz.png" alt="Photo de profil" class="img-fluid rounded-circle shadow-lg profile-img">
                 </div>
             </div>
         </div>
     </header>
+    <br>
+    <br>
     <!-- Compétences -->
     <section class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-5 display-4 fw-bold">Mes Compétences</h2>
-            <div class="row g-4 auto">
-                <div class="col-md-4 col-6">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center p-4 skill-card">
                         <i class="fab fa-html5 text-danger fs-1 mb-3"></i>
                         <h3>HTML5</h3>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center p-4 skill-card">
                         <i class="fab fa-css3-alt text-primary fs-1 mb-3"></i>
                         <h3>CSS3</h3>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center p-4 skill-card">
                         <i class="fab fa-js-square text-warning fs-1 mb-3"></i>
                         <h3>JavaScript</h3>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center p-4 skill-card">
                         <i class="fab fa-php text-info fs-1 mb-3"></i>
                         <h3>PHP</h3>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center p-4 skill-card">
                         <i class="fas fa-database text-secondary fs-1 mb-3"></i>
                         <h3>MySQL</h3>
                     </div>
                 </div>
-                <div class="col-md-4 col-6">
+                <div class="col">
                     <div class="card h-100 shadow-sm border-0 text-center p-4 skill-card">
                         <i class="fab fa-linux text-success fs-1 mb-3"></i>
                         <h3>Linux</h3>
@@ -96,9 +112,72 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p class="mb-0">© 2024 MAHAMAT ALI MOUSSA - Tous droits réservés</p>
+    <footer class="bg-primary text-white py-4" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>
+                        <a class="navbar-brand fw-bold" href="#">
+                        <i class="fas fa-code me-2"></i>MAHAMAT ALI MOUSSA
+                        </a>
+                    </h5>
+                    <p>Développeur Full-Stack</p>
+                    <p>DevOps</p>
+                    <span>conception de solutions web performantes</span>
+                    <span>spécialisé en sécurité informatique</span>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <h5>Navigation</h5>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./components/about.html">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./components/services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./components/realisation.html">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./components/portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./components/contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p><i class="fas fa-envelope me-2"></i> mahamatalimoussa49@gmail.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +221 78 290 17 01</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Fass Dakar, Sénégal</p>
+                    <h3 class="h4 mb-3 d-block d-sm-none">Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/public-profile/settings" target="_blank" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/al-king-github" target="_blank" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://x.com/MAHAMAT89800679?t=X2egePukLqvNe5HRSg1vFA&s=09" target="_blank" title="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="https://www.facebook.com/mahamatalimoussa0235" target="_blank" title="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mahamatalimoussa0235/" target="_blank" title="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>                
+            </div>     
+            <hr class="my-4 bg-white">
+            <div class="text-center">
+                <p class="mb-0">© 2025 MAHAMAT ALI MOUSSA - Tous droits réservés</p>
+            </div>            
         </div>
     </footer>
     <!-- Bootstrap JS -->
